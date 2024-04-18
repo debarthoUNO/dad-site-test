@@ -1,0 +1,155 @@
+html{
+  border:5px solid white;
+  height:95%;
+}
+
+header{
+  border: 3px solid blue;
+}
+
+body{
+  border: 3px solid purple;
+  background-image: url('cessnaplanes.jpg');
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+	width:95%;
+  height:95%;
+	padding:10px;
+  margin: auto;
+
+/*  padding-top: 2%; Change distance of div from top of page*/
+}
+
+footer{
+  border:3px solid red;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display:flex;
+  justify-content: center;
+  width:100%;
+}
+
+/*FOR VIDEO
+#mainVideo{
+	z-index: -1;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-height: 100%;
+	min-width: 100%;
+}*/
+
+.dropdownMenu{
+  border:3px solid green;
+  width:100%;
+/*  padding:10px;*/
+  display:inline-flex;
+  justify-content: center;
+}
+
+.background {
+	z-index: 1;
+}
+
+h1, p{
+  border:3px solid white;
+  text-align: center;
+  font-family: Arial;
+}
+
+.dropbtn {
+  background-color: #0000ff;
+  color: white;
+/*  padding: 16px;*/
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 20px;
+  min-width: 150px;
+}
+
+.dropdown {
+  border:3px solid yellow;
+/*  max-width:100%;*/
+  position: relative;
+  display: inline-block;
+  padding:10px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #5555ff;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 5px rgba(0,0,0,0.5);
+  z-index: 1;
+
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #9999ff;
+	color: black
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #7777ff;
+  color: white;
+}
+
+@media(max-width:700px){
+  .dropdown:hover .dropdown-content{
+    display:inline-block;
+  }
+}
+@media(max-width:700px){
+  .dropdownMenu{
+    width:50%;
+    display: block;
+  }
+}
+
+.fa{
+/*  display:inline-block;*/
+  scale:150%;
+/*  width:auto;*/
+/*  width:100%;*/
+  height: 100%;
+  padding:20px;
+  font-size: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2em 2em;
+  border-radius: 50%;
+  transition: width 1s, height 1s transform 2s;
+}
+
+.fa:hover{
+  opacity: 50%;
+}
+
+.fa-facebook{
+  background: #3B5998;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
