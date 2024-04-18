@@ -147,11 +147,13 @@ h1, p{
 .fa-facebook{
   background: #3B5998;
   color: white;
+  transition: all .5s;
 }
 
 .fa-youtube {
   background: #bb0000;
   color: white;
+  transition: all .5s;
 }
 
 .fa-facebook:hover{
