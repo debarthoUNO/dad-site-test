@@ -1,14 +1,14 @@
 html{
-  border:5px solid white;
+/*  border:5px solid white;*/
   height:95%;
 }
 
 header{
-  border: 3px solid blue;
+/*  border: 3px solid blue;*/
 }
 
 body{
-  border: 3px solid purple;
+/*  border: 3px solid purple;*/
   background-image: url('cessnaplanes.jpg');
   background-color: grey;
   background-repeat: no-repeat;
@@ -19,12 +19,10 @@ body{
   height:95%;
 	padding:10px;
   margin: auto;
-
-/*  padding-top: 2%; Change distance of div from top of page*/
 }
 
 footer{
-  border:3px solid red;
+/*  border:3px solid red;*/
   position: fixed;
   left: 0;
   bottom: 0;
@@ -44,9 +42,8 @@ footer{
 }*/
 
 .dropdownMenu{
-  border:3px solid green;
+/*  border:3px solid green;*/
   width:100%;
-/*  padding:10px;*/
   display:inline-flex;
   justify-content: center;
 }
@@ -56,7 +53,7 @@ footer{
 }
 
 h1, p{
-  border:3px solid white;
+/*  border:3px solid white;*/
   text-align: center;
   font-family: Arial;
 }
@@ -65,15 +62,16 @@ h1, p{
   background-color: #0000ff;
   color: white;
 /*  padding: 16px;*/
+  border: none;
   font-size: 16px;
   cursor: pointer;
   padding: 10px 20px;
   min-width: 150px;
+  transition: all .5s;
 }
 
 .dropdown {
-  border:3px solid yellow;
-/*  max-width:100%;*/
+/*  border:3px solid yellow;*/
   position: relative;
   display: inline-block;
   padding:10px;
@@ -85,10 +83,10 @@ h1, p{
   display: none;
   position: absolute;
   background-color: #5555ff;
+  opacity:85%;
   min-width: 150px;
   box-shadow: 0px 8px 16px 5px rgba(0,0,0,0.5);
-  z-index: 1;
-
+  transition: all .5s;
 }
 
 .dropdown-content a {
@@ -96,21 +94,23 @@ h1, p{
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+/*  opacity: 75%;*/
+  transition: all .5s;
 }
 
 .dropdown-content a:hover {
 	background-color: #9999ff;
-	color: black
+	color: black;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
-  
 }
 
 .dropdown:hover .dropbtn {
   background-color: #7777ff;
-  color: white;
+  color: black;
+  opacity:75%;
 }
 
 @media(max-width:700px){
@@ -137,11 +137,11 @@ h1, p{
   text-decoration: none;
   margin: 2em 2em;
   border-radius: 50%;
-  transition: width 1s, height 1s transform 2s;
 }
 
 .fa:hover{
-  opacity: 50%;
+/*  opacity: 80%;*/
+/*  border: 1px solid white;*/
 }
 
 .fa-facebook{
@@ -152,4 +152,14 @@ h1, p{
 .fa-youtube {
   background: #bb0000;
   color: white;
+}
+
+.fa-facebook:hover{
+  background: white;
+  color: #3b5998;
+}
+
+.fa-youtube:hover{
+  background: white;
+  color: #bb0000;
 }
